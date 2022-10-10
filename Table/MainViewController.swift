@@ -13,7 +13,7 @@ class MainViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
     // MARK: - Variables
-    let names: Array<String> = ["Angel","Nartekie","Tetteh","Laxy1"]
+    let names: Array<String> = ["Angel","Nartekie","Tetteh","Laxy"]
     // MARK: - Constants
    
     
