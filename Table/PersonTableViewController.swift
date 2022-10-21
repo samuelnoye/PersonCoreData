@@ -30,7 +30,7 @@ class PersonTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        print("count:",names.count)
+        print("count11:",names.count)
         return names.count
     }
 

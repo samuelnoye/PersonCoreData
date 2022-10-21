@@ -11,7 +11,7 @@ class MainViewController: UIViewController {
     
     
     // MARK: - IBOutlets
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableDataView: UITableView!
     // MARK: - Variables
     let names: Array<String> = ["Arteta","St. Noye","Tetteh","Laxy"]
     // MARK: - Constants
@@ -23,9 +23,9 @@ class MainViewController: UIViewController {
 
         // Do any additional setup after loading the view.
       //  tableView.register(UINib(nibName: TableViewCell.identifier, bundle: nil), forCellReuseIdentifier: TableViewCell.identifier)
-        tableView.delegate = self
-        tableView.dataSource = self
-        
+        tableDataView.delegate = self
+        tableDataView.dataSource = self
+        tableDataView.reloadData()
     }
 
 
@@ -37,8 +37,12 @@ class MainViewController: UIViewController {
 
 // MARK: - Extension
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+    private func numberOfSections(_ tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return names.count
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("count:",names.count)
+        print("countqwr:",names.count)
         return names.count
     }
     
@@ -48,7 +52,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         var name = names[indexPath.row]
-        
+        print(name)
         // Configure the cell...
         cell.nameLbl.text = name
         cell.ageLbl.text = "20"

@@ -175,7 +175,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="AUq-V2-xhv" id="0ls-oc-0eJ"/>
+                        <outlet property="tableDataView" destination="AUq-V2-xhv" id="0ls-oc-0eJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPm-Go-ppH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
