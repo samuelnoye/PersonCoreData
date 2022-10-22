@@ -23,7 +23,7 @@ class MainViewController: UIViewController {
 
         // Do any additional setup after loading the view.
       //  tableView.register(UINib(nibName: TableViewCell.identifier, bundle: nil), forCellReuseIdentifier: TableViewCell.identifier)
-        tableDataView.delegate = self
+       // tableDataView.delegate = self
         tableDataView.dataSource = self
         tableDataView.reloadData()
     }
