@@ -13,7 +13,7 @@ class MainViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var tableDataView: UITableView!
     // MARK: - Variables
-    let names: Array<String> = ["Arteta","St. Noye","Tetteh","Laxy"]
+    let names: Array<String> = ["Arteta","St. Noye","Tetteh","Laxy","Laxy"]
     // MARK: - Constants
    
     
@@ -42,8 +42,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         return names.count
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("countqwr:",names.count)
-        return names.count
+     return names.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
