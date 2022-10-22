@@ -25,7 +25,7 @@ class MainViewController: UIViewController {
       //  tableView.register(UINib(nibName: TableViewCell.identifier, bundle: nil), forCellReuseIdentifier: TableViewCell.identifier)
         tableDataView.delegate = self
         tableDataView.dataSource = self
-       // tableDataView.reloadData()
+        tableDataView.reloadData()
     }
 
 
